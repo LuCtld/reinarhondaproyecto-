@@ -1,0 +1,306 @@
+
+/*Responsive*/
+
+@media (max-width: 600px) {
+
+    /*Index*/
+
+    .container-header{
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        grid-template-rows: 2, 1fr;
+        grid-template-areas: 
+        "logo"
+        "nav";
+        width: 90%;
+        max-width: 90%;
+        margin: 0% 5% 0% 5% ;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        grid-area: logo;
+        padding: 5% 5% 5% 5%;
+        max-width: 80%;
+    }
+    .logo img{
+        width: 80%;
+        height: auto;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        grid-area: nav;
+        padding: 2% 5% 5% 5%;
+        width: 90%;
+    }
+    .nav-ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        
+    }  
+    .nav-ul-li{
+        text-decoration: none;
+        padding: 1%;
+    }   
+    nav ul li a{
+        text-decoration: none;
+    }    
+    .botonera{
+        font-family: 'Malgun';
+        src: url(../assets/font/malgun.ttf);
+        color: #6B5344;   
+        font-size: 40%;
+    }
+    .ig{
+        width: 100%;
+        min-width: 40%;
+        height: auto;
+        padding: 1% 1% 1% 1%;
+    }
+    .face{
+        width: 100%;
+        min-width: 40%;
+        height: auto;
+        padding: 1% 1% 1% 1%;
+    }
+
+    .conteiner-main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "texto "
+        "imagen";
+        max-width: 40%;
+        width: 90%;
+        margin: 0% 5% 5% 5% ;
+        background-color: #FAE3E1;
+    }
+    .texto{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        grid-area: texto;
+        padding: 2%;
+    }
+    .titulo-seccion{
+        font-family:'Hoodson';
+        src: url(../assets/font/hoodson.ttf);
+        color: #6B5344;   
+        font-size: 150%;
+        text-align: center;
+    }
+    
+    .texto-inicio{
+        font-family: 'Malgun';
+        src: url(../assets/font/malgun.ttf);
+        color: #6B5344;  
+        font-size: 50%;
+        line-height: 180%;
+        margin: 2% 2% 2% 2%;
+        padding: 0%;
+        text-align: justify;
+        max-width: 100%;
+    }
+    
+    .imagen-inicio img{
+        width: 95%;
+        padding: 2% 2% 2% 2%;
+        
+    }
+
+    /*Footer*/
+    
+.footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "texto"   
+    "numeros" 
+    "mail";
+    color: #6B5344;
+    font-family:'Malgun';
+	src: url(../assets/font/malgun.ttf);
+    font-size: 8px;
+    width: 90%;
+    margin: 0% 5% 5% 5% ;
+}
+
+.footer__reina{
+    display: flex;
+    align-content: left;
+    grid-area: texto;
+    padding: 1% 1% 1% 1%;
+
+}
+
+
+.footer__numeros{
+    grid-area: numeros;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1% 1% 1% 1%;
+}
+
+.footer__mail{
+    grid-area: mail;
+    padding: 1% 1% 1% 1%;
+}
+
+.footer__what{
+    display: none;
+}
+
+.footer__sobre{
+    display: none;
+}
+
+/*trabajos*/
+
+.conteiner-trabajos{
+    display: grid;
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: repeat(7);
+    grid-template-areas: 
+    "tituloinvita"
+    "foto-uno"
+    "foto-dos"
+    "foto-tres";
+    width: 90%;
+    max-width: 40%;
+    margin: 0% 5% 5% 5% ;
+    background-color: #FAE3E1;
+
+}
+
+
+.titulo-aclaracion-trabajos{
+    grid-area: tituloinvita;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0% 0% 0%;
+
+
+}
+
+.titulo-seccion-trabajos{
+    font-family:'Hoodson';
+    src: url(../assets/font/hoodson.ttf);
+    color: #6B5344;   
+    font-size: 150%;
+    text-align: left;
+    padding: 2%  2%  2%  2%;
+    text-align: center;
+
+}
+
+.aclaracion-trabajos{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 50%;
+    padding: 2%  2%  2%  2%;
+    text-align: center;
+
+}
+
+/*Fotos*/
+
+.trabajos-card-uno{
+    grid-area: foto-uno;
+    padding: 2%  2%  2%  2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.trabajos-card-uno img{
+    width: 90%;
+    height: auto;
+    padding: 2%  2%  2%  2%;
+}
+.trabajos-card-uno h5{
+    font-family: 'Malgun';
+    src: url(assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 70%;
+    text-align: center;
+}
+
+.trabajos-card-uno P{
+    font-family: 'Malgun';
+    src: url(assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 60%;
+    text-align: left;
+    padding: 2%  2%  2%  2%;;
+    text-align: center;
+}
+
+.trabajos-card-dos{
+    grid-area: foto-dos;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trabajos-card-dos img{
+    width: 90%;
+    height: auto;
+}
+
+.trabajos-card-dos h5{
+    font-family: 'Malgun';
+    src: url(assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 70%;
+    text-align: center;
+}
+
+.trabajos-card-dos P{
+    font-family: 'Malgun';
+    src: url(assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 60%;
+    text-align: left;
+    padding: 2%  2%  2%  2%;;
+    text-align: center;
+
+}
+
+.trabajos-card-tres{
+    grid-area: foto-tres;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trabajos-card-tres img{
+    width: 90%;
+    height: auto;
+}
+.trabajos-card-tres h5{
+    font-family: 'Malgun';
+    src: url(assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 70%;
+    text-align: center;
+}
+
+.trabajos-card-tres P{
+    font-family: 'Malgun';
+    src: url(assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 60%;
+    text-align: left;
+    padding: 2%  2%  2%  2%;
+    text-align: center;
+}
+
+}
+

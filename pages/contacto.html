@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="shortcut icon" href="../assets/images/iconcorona.png">
+    <title>Reina Rhonda</title>
+</head>
+<body>
+    <header class="container-header">
+        <div class="logo">
+            <img src="../assets/images/logosincorona.png" alt="Reina Rhonda">
+        </div>
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="nav-ul-li"><a class="botonera" href="../index.html">Inicio</a></li>
+                <li class="nav-ul-li"><a class="botonera" href="invitaciones.html">Invitaciones</a></li>
+                <li class="nav-ul-li"><a class="botonera" href="infantiles.html">Infantiles</a></li>
+                <li class="nav-ul-li"><a class="botonera" href="trabajos.html">Trabajos</a></li>
+                <li class="nav-ul-li"><a class="botonera" href="contacto.html">Contacto</a></li>
+                <li class="nav-ul-li"><a href="https://www.instagram.com/reinarhonda/?hl=es" target="_blank"> 
+                    <img src="../assets/images/instagram.png" alt="Instagram" height="40" width="40">
+                </li>
+                <li class="nav-ul-li"><a href="https://www.facebook.com/search/top?q=reina%20rhonda%20dise%C3%B1o%20grafico" 
+                    target="_blank">
+                    <img src="../assets/images/facebook.png" alt="Facebook" height="40" width="40"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteiner-contacto">
+
+        <div class="contacto-titulo">
+            <h2>Contacto!</h2>
+        </div>
+
+        <div class="contacto-texto">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+        </div>
+
+        <div class="contacto-telefono">
+            <img src="../assets/images/icontel.png" alt="Telefono">
+            <p>0223 555 5555555</p>
+        </div>
+
+        <div class="contacto-mail">
+            <img src="../assets/images/iconmail.png" alt="Mail">
+            <p>reinarhonda.rr@gmail.com</p>
+        </div>
+
+        <div class="contacto-ig">
+            <img src="../assets/images/iconig.png" alt="Instagram">
+            <p>@reinarhonda</p>
+        </div>
+
+        <div class="contacto-face">
+            <img src="../assets/images/iconface.png" alt="Facebook">
+            <p>Reina Rhonda Diseño Gráfico</p>
+        </div>
+
+        <!-- Formulario -->
+        <div class="formualario">
+            <p>
+                <label class="textosformularios" for="nombre">Nombre: </label>
+                <input type="text" name="nombre">
+        
+        
+            <p>
+                <label class="textosformularios" for="email">Email:</label>
+                <input type="text" name="email" required>
+            </p>
+        
+        
+        
+            <form action="adondeva.php" method="get" class="formularios">
+        
+            <h4 class="titulosformularios">¿Por qué desea consultar?</h4>
+            <label class="textosformularios" for="¿Por qué desea consultar?">Eventos</label>
+            <input  type="checkbox" name="¿Por qué desea consultar?" id="Eventos">
+        
+            
+            <label class="textosformularios" for="¿Por qué desea consultar?">Diseño de marca</label>
+            <input type="checkbox" name="¿Por qué desea consultar?" id="Diseño de marca">
+        
+        
+            <h4 class="titulosformularios">En el caso de un evento indicar</h4>
+            <label class="textosformularios" for="En el caso de un evento indicar">Boda</label>
+            <input type="radio" name="En el caso de un evento indicar" id="boda">
+        
+            <label class="textosformularios" class="textosformularios" for="En el caso de un evento indicar">Quince Años</label>
+            <input type="radio" name="En el caso de un evento indicar" id="quince">
+        
+            <label class="textosformularios" for="En el caso de un evento indicar">Cumpleaños Infantil</label>
+            <input type="radio" name="En el caso de un evento indicar" id="Cumpleaños Infantil">
+        
+            <label class="textosformularios" for="En el caso de un evento indicar">Aniversario</label>
+            <input type="radio" name="En el caso de un evento indicar" id="Aniversario">
+        
+        
+            <h4 class="titulosformularios">Deseo recibir informacion sobre:</h4>
+            <select class="menu-desplegable"   name="menu desplegable" id="">
+            <option class="textosformularios" value="opcion1">Invitaciones</option>
+            <option class="textosformularios" value="opcion2">Decoración</option>
+            </select>
+        
+            <p>
+            <h4 class="titulosformularios">Consulta</h4>
+            <textarea name="consulta" id="" cols="30" rows="10"></textarea>
+            </p>
+        
+        
+            <p>
+            <input class="boton"  type="submit" value="Enviar">
+            <input class="boton" type="reset" value="Borrar">
+            </p>
+            </form>
+        </div>
+
+        </section>  
+    </main>
+
+    <footer class="footer">
+        <p class="footer__reina">Reina Rhonda</p>
+        <img class="footer__what" src="../assets/images/whatsapp.png" alt="Whatsapp">
+        <p class="footer__numeros">0223 155800311 / 0223 156889403</p>
+        <img class="footer__sobre" src="../assets/images/sobre.png" alt="Mail">
+        <p class="footer__mail">reinarhonda.rr@gmail.com</p>
+    </footer>
+    
+</body>
+</html>
