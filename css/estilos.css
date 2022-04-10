@@ -82,7 +82,8 @@ nav ul li a{
     margin-left: 70px;
     margin-top: 10px;
     margin-bottom: 5px;
-    background-color: #FAE3E1;
+    /*background-color: #FAE3E1;*/
+    background-image: radial-gradient(#FAEDEB,#EDB9B4);
 }
 
 .texto{
@@ -112,13 +113,20 @@ nav ul li a{
     width: 600px;
     height: auto;
     padding: 20px 20px 20px 20px;
+
 }
 
 .imagen-mano{
     position: fixed;
     z-index: auto;
     padding-left: 1100px;
+    transition:all 5s;
 }
+
+.imagen-mano:hover{
+    transform: translate(-200px);
+}
+
 .imagen-mano img{
     height: 550px;
 }
