@@ -15,9 +15,9 @@
 }
 
 /*Body*/
-body{
+.imagen-fondo{
     background-image: url(../assets/images/fondo.jpg);
-    background-size: cover;
+    background-size: contain;
 }
 
 /*header*/
@@ -31,12 +31,14 @@ body{
 
 .logo{
     grid-area: logo;
-    padding: 40px 0px 0px 60px;
+    padding: 0px 0px 0px 0px;
 }
 .logo img{
     width: 200px;
     height: auto;
 }
+
+/*en Boot*/
 
 .nav{
     grid-area: nav;
@@ -66,11 +68,13 @@ nav ul li a{
     color: #6B5344;   
 }
 
-
-
 /*Index*/
 
-
+.imagen-mano{
+    position: fixed;
+    z-index: auto;
+    padding-left: 82%;
+}
 
 .conteiner-main{
     display: grid;
@@ -107,28 +111,37 @@ nav ul li a{
     padding-right: 20px;
     margin-top: 20px;
     text-align: justify;
+
 }
 
 .imagen-inicio img{
-    width: 600px;
+    width: 100%;
     height: auto;
     padding: 20px 20px 20px 20px;
 
 }
 
-.imagen-mano{
-    position: fixed;
-    z-index: auto;
-    padding-left: 1100px;
-    transition:all 5s;
+/*Carrusel*/
+.carrusel-inicio{
+    padding: 15% 5% 5% 5%;
 }
 
+.imagen-mano{
+    padding-top: 3%;
+    padding-left: 85%;
+    position: fixed;
+    z-index: 100;
+    transition:all 5s;
+}
+/*
 .imagen-mano:hover{
     transform: translate(-200px);
 }
+*/
 
 .imagen-mano img{
-    height: 550px;
+    height: 500px;
+
 }
 
 /*footer*/
@@ -142,8 +155,8 @@ nav ul li a{
     font-family:'Malgun';
 	src: url(../assets/font/malgun.ttf);
     font-size: 12px;
-    margin-left: 300px;
-    margin-top: 10px;
+    margin-left: 25%;
+    padding: 1.5% 1% 1% 1% ;
 }
 
 .footer__reina{
@@ -195,6 +208,11 @@ nav ul li a{
     align-content: center;
 }
 
+.container-color{
+    background-color: #FAE3E1;
+
+}
+
 
 .titulo-aclaracion{
     grid-area: tituloinvita;
@@ -219,17 +237,23 @@ nav ul li a{
 }
 
 .diseños-personalizados{
-    grid-area: imagendiseños;
-    padding: 25px 20px 20px 20px;
-    align-content: flex-end;
+    position: absolute;
+    z-index: 100;
+    padding-top:  2%;
+    padding-left: 70%;
+    
 }
 
 .diseños-personalizados img{
-    width: 280px;
-    height: 50px;
+    width: 85%;
 }
 
 /*Fotos*/
+
+.color-card{
+    background-color: #FAE3E1;
+
+}
 
 .invitacion-card-uno{
     grid-area: foto-uno;
@@ -237,23 +261,35 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition:all 3s;
+
 }
 .invitacion-card-uno img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
 }
+
+.invitacion-card-uno img:hover{
+    position: relative;
+    z-index: 100;
+    width: 120%;
+
+}
+
+
+
 .invitacion-card-uno h5{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;
+    text-align: center;
 }
 
 .invitacion-card-uno P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 
 }
@@ -264,10 +300,16 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition:all 3s;
 }
 .invitacion-card-dos img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
+}
+
+.invitacion-card-dos img:hover{
+    position: relative;
+    z-index: 100;
+    width: 120%;
 }
 
 .invitacion-card-dos h5{
@@ -275,13 +317,14 @@ nav ul li a{
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;
+    text-align: center;
 }
 
 .invitacion-card-dos P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 
 }
@@ -292,23 +335,31 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition:all 3s;
 }
 .invitacion-card-tres img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
 }
+
+.invitacion-card-tres img:hover{
+    position: relative;
+    z-index: 100;
+    width: 120%;
+}
+
 .invitacion-card-tres h5{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;
+    text-align: center;
 }
 
 .invitacion-card-tres P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 
 }
@@ -319,10 +370,16 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition:all 3s;
 }
 .invitacion-card-cuatro img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
+}
+
+.invitacion-card-cuatro img:hover{
+    position: relative;
+    z-index: 100;
+    width: 120%;
 }
 
 .invitacion-card-cuatro h5{
@@ -330,13 +387,14 @@ nav ul li a{
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;
+    text-align: center;
 }
 
 .invitacion-card-cuatro P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -346,23 +404,32 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition:all 3s;
 }
 .invitacion-card-cinco img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
 }
+
+.invitacion-card-cinco img:hover{
+    position: relative;
+    z-index: 100;
+    width: 120%;
+}   
+
+
 .invitacion-card-cinco h5{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;
+    text-align: center;
 }
 
 .invitacion-card-cinco P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -372,10 +439,16 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition:all 3s;
 }
 .invitacion-card-seis img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
+}
+
+.invitacion-card-seis img:hover{
+    position: relative;
+    z-index: 100;
+    width: 120%;
 }
 
 .invitacion-card-seis h5{
@@ -383,13 +456,14 @@ nav ul li a{
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;   
+    text-align: center;
 }
 
 .invitacion-card-seis P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -456,23 +530,35 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 3s;
 }
 .infantiles-card-uno img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
+
 }
+
+
+.infantiles-card-uno img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
+}
+
+
+
 .infantiles-card-uno h5{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;
+    text-align: center;
 }
 
 .infantiles-card-uno P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 
 }
@@ -483,24 +569,32 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 3s;
 }
 .infantiles-card-dos img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
 }
+
+.infantiles-card-dos img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
+}
+
 
 .infantiles-card-dos h5{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;
+    text-align: center;
 }
 
 .infantiles-card-dos P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 
 }
@@ -511,23 +605,32 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 3s;
 }
 .infantiles-card-tres img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
+    
 }
+
+.infantiles-card-tres img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
+}
+
 .infantiles-card-tres h5{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;
+    text-align: center;
 }
 
 .infantiles-card-tres P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 
 }
@@ -538,10 +641,16 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 3s;
 }
 .infantiles-card-cuatro img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
+}
+
+.infantiles-card-cuatro img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
 }
 
 .infantiles-card-cuatro h5{
@@ -549,13 +658,14 @@ nav ul li a{
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;
+    text-align: center;
 }
 
 .infantiles-card-cuatro P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -565,23 +675,31 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 3s;
 }
 .infantiles-card-cinco img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
 }
+
+.infantiles-card-cinco img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
+}
+
 .infantiles-card-cinco h5{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;
+    text-align: center;
 }
 
 .infantiles-card-cinco P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -591,24 +709,29 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 3s;
 }
 .infantiles-card-seis img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
 }
+.infantiles-card-seis img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
 
+}
 .infantiles-card-seis h5{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;   
+    text-align: center;
 }
 
 .infantiles-card-seis P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -618,23 +741,31 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 3s;
 }
 .infantiles-card-siete img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
 }
+
+.infantiles-card-siete img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
+}
+
 .infantiles-card-siete h5{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;
+    text-align: center;
 }
 
 .infantiles-card-siete P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 .infantiles-card-ocho{
@@ -643,23 +774,30 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 3s;
 }
 .infantiles-card-ocho img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
+}
+
+.infantiles-card-ocho img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
 }
 .infantiles-card-ocho h5{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;
+    text-align: center;
 }
 
 .infantiles-card-ocho P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -669,23 +807,30 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 3s;
 }
 .infantiles-card-nueve img{
-    width: 355px;
-    height: 355px;
+    width: 100%;
+}
+
+.infantiles-card-nueve img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
 }
 .infantiles-card-nueve h5{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
     font-size: 16px;
+    text-align: center;
 }
 
 .infantiles-card-nueve P{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -744,7 +889,7 @@ nav ul li a{
     
 }
 .trabajos-card-uno img{
-    width: 1160px;
+    width: 100%;
     height: auto;
 }
 .trabajos-card-uno h5{
@@ -771,7 +916,7 @@ nav ul li a{
     align-items: left;
 }
 .trabajos-card-dos img{
-    width: 1160px;
+    width: 100%;
     height: auto;
 }
 
@@ -800,7 +945,7 @@ nav ul li a{
     align-items: left;
 }
 .trabajos-card-tres img{
-    width: 1160px;
+    width: 100%;
     height: auto;
 }
 .trabajos-card-tres h5{
@@ -845,11 +990,19 @@ nav ul li a{
 
 .contacto-titulo{
     grid-area: titulocontacto;
-    padding: 20px 0px 0px 30px;
     font-family:'Hoodson';
 	src: url(../assets/font/hoodson.ttf);
-    color: #BF8A8B;
+    color: #6B5344;   
     font-size: 40px;
+    padding: 20px 10px 10px 20px;
+}
+
+.contacto-titulo h2{
+    font-family:'Hoodson';
+	src: url(../assets/font/hoodson.ttf);
+    color: #6B5344;   
+    font-size: 60px;
+    padding: 20px 10px 10px 20px;
 }
 
 .contacto-texto{
@@ -862,9 +1015,9 @@ nav ul li a{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 12px;
+    font-size: 14px;
     text-align: left;
-    line-height: 180%;
+    line-height: 200%;
 
 }
 
