@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -39,37 +38,43 @@
     height: auto;
 }
 
-/*en Boot
+/*en Boot*/
 
 .nav{
     grid-area: nav;
     padding: 60px 70px 0px 60px;
+}
 
-    .nav-ul{
+.nav-ul{
     display: flex;
     justify-content: left;
-    list-style: none;    
-    }
+    list-style: none;
+    
+}
 
-    .nav-ul-li{
+.nav-ul-li{
     text-decoration: none;
     padding: 0px 10px;
-    }
+}
 
-    a{
+nav ul li a{
     text-decoration: none;
+}
+
+
+.botonera{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;   
-
-    }
-
 }
-*/
-
 
 /*Index*/
 
+.imagen-mano{
+    position: fixed;
+    z-index: auto;
+    padding-left: 82%;
+}
 
 .conteiner-main{
     display: grid;
@@ -127,13 +132,17 @@
     position: fixed;
     z-index: 100;
     transition:all 5s;
-
-    img{
-        height: 500px;
-    }
 }
+/*
+.imagen-mano:hover{
+    transform: translate(-200px);
+}
+*/
 
+.imagen-mano img{
+    height: 500px;
 
+}
 
 /*footer*/
 
@@ -148,38 +157,36 @@
     font-size: 12px;
     margin-left: 25%;
     padding: 1.5% 1% 1% 1% ;
-
-    .footer__reina{
-        grid-area: "texto";
-        padding-right: 15px;
-        text-align: right;
-    }
-    
-    .footer__what{
-        grid-area: "what";
-        width: 20px;
-        height: auto;
-    }
-    
-    .footer__numeros{
-        grid-area: "numeros";
-        padding-left: 3px;
-        padding-right: 10px;
-    }
-    
-    .footer__sobre{
-        grid-area: "sobre";
-        width: 20px;
-        height: auto;
-    }
-    
-    .footer__mail{
-        grid-area: "mail";
-        padding-left: 3px;
-    }
 }
 
+.footer__reina{
+    grid-area: "texto";
+    padding-right: 15px;
+    text-align: right;
+}
 
+.footer__what{
+    grid-area: "what";
+    width: 20px;
+    height: auto;
+}
+
+.footer__numeros{
+    grid-area: "numeros";
+    padding-left: 3px;
+    padding-right: 10px;
+}
+
+.footer__sobre{
+    grid-area: "sobre";
+    width: 20px;
+    height: auto;
+}
+
+.footer__mail{
+    grid-area: "mail";
+    padding-left: 3px;
+}
 
 /*Invitaciones*/
 .conteiner-invitaciones{
@@ -235,20 +242,19 @@
     padding-top:  2%;
     padding-left: 70%;
     
-    img{
-        width: 80%;
-    }
 }
 
-/*CARDS INVITACIONES*/
+.diseños-personalizados img{
+    width: 80%;
+}
+
+/*Fotos*/
+
 .color-card{
     background-color: #FAE3E1;
+
 }
 
-// CARDS IMPORT
-@import "cards";
-
-//Anidacion
 .invitacion-card-uno{
     grid-area: foto-uno;
     padding: 20px;
@@ -257,28 +263,34 @@
     align-items: center;
     transition:all 3s;
 
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;        
-        }
-    }
+}
+.invitacion-card-uno img{
+    width: 100%;
+}
 
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+.invitacion-card-uno img:hover{
+    position: relative;
+    z-index: 100;
+    width: 120%;
+
+}
+
+
+
+.invitacion-card-uno h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;
+    text-align: center;
+}
+
+.invitacion-card-uno P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
 
 }
 
@@ -289,29 +301,31 @@
     flex-direction: column;
     align-items: center;
     transition:all 3s;
+}
+.invitacion-card-dos img{
+    width: 100%;
+}
 
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
+.invitacion-card-dos img:hover{
+    position: relative;
+    z-index: 100;
+    width: 120%;
+}
 
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+.invitacion-card-dos h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;
+    text-align: center;
+}
+
+.invitacion-card-dos P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
 
 }
 
@@ -322,33 +336,33 @@
     flex-direction: column;
     align-items: center;
     transition:all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
-
-    
+}
+.invitacion-card-tres img{
+    width: 100%;
 }
 
+.invitacion-card-tres img:hover{
+    position: relative;
+    z-index: 100;
+    width: 120%;
+}
+
+.invitacion-card-tres h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;
+    text-align: center;
+}
+
+.invitacion-card-tres P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
+
+}
 
 .invitacion-card-cuatro{
     grid-area: foto-cuatro;
@@ -357,30 +371,31 @@
     flex-direction: column;
     align-items: center;
     transition:all 3s;
-    
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }    
-    }
+}
+.invitacion-card-cuatro img{
+    width: 100%;
+}
 
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
-    
+.invitacion-card-cuatro img:hover{
+    position: relative;
+    z-index: 100;
+    width: 120%;
+}
+
+.invitacion-card-cuatro h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;
+    text-align: center;
+}
+
+.invitacion-card-cuatro P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
 }
 
 .invitacion-card-cinco{
@@ -390,31 +405,33 @@
     flex-direction: column;
     align-items: center;
     transition:all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }           
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+}
+.invitacion-card-cinco img{
+    width: 100%;
 }
 
+.invitacion-card-cinco img:hover{
+    position: relative;
+    z-index: 100;
+    width: 120%;
+}   
+
+
+.invitacion-card-cinco h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;
+    text-align: center;
+}
+
+.invitacion-card-cinco P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
+}
 
 .invitacion-card-seis{
     grid-area: foto-seis;
@@ -423,35 +440,32 @@
     flex-direction: column;
     align-items: center;
     transition:all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
-
-
+}
+.invitacion-card-seis img{
+    width: 100%;
 }
 
+.invitacion-card-seis img:hover{
+    position: relative;
+    z-index: 100;
+    width: 120%;
+}
 
+.invitacion-card-seis h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;   
+    text-align: center;
+}
 
+.invitacion-card-seis P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
+}
 
 /*INFANTILES*/
 .conteiner-infantiles{
@@ -517,34 +531,37 @@
     flex-direction: column;
     align-items: center;
     transition: all 3s;
+}
+.infantiles-card-uno img{
+    width: 100%;
 
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
-
-    
 }
 
 
+.infantiles-card-uno img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
+}
+
+
+
+.infantiles-card-uno h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;
+    text-align: center;
+}
+
+.infantiles-card-uno P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
+
+}
 
 .infantiles-card-dos{
     grid-area: foto-dos;
@@ -553,31 +570,34 @@
     flex-direction: column;
     align-items: center;
     transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-    
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+}
+.infantiles-card-dos img{
+    width: 100%;
 }
 
+.infantiles-card-dos img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
+}
+
+
+.infantiles-card-dos h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;
+    text-align: center;
+}
+
+.infantiles-card-dos P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
+
+}
 
 .infantiles-card-tres{
     grid-area: foto-tres;
@@ -586,32 +606,34 @@
     flex-direction: column;
     align-items: center;
     transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
+}
+.infantiles-card-tres img{
+    width: 100%;
     
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
 }
 
+.infantiles-card-tres img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
 
+}
+
+.infantiles-card-tres h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;
+    text-align: center;
+}
+
+.infantiles-card-tres P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
+
+}
 
 .infantiles-card-cuatro{
     grid-area: foto-cuatro;
@@ -620,32 +642,32 @@
     flex-direction: column;
     align-items: center;
     transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+}
+.infantiles-card-cuatro img{
+    width: 100%;
 }
 
+.infantiles-card-cuatro img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
 
+}
+
+.infantiles-card-cuatro h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;
+    text-align: center;
+}
+
+.infantiles-card-cuatro P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
+}
 
 .infantiles-card-cinco{
     grid-area: foto-cinco;
@@ -654,32 +676,32 @@
     flex-direction: column;
     align-items: center;
     transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+}
+.infantiles-card-cinco img{
+    width: 100%;
 }
 
+.infantiles-card-cinco img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
 
+}
+
+.infantiles-card-cinco h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;
+    text-align: center;
+}
+
+.infantiles-card-cinco P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
+}
 
 .infantiles-card-seis{
     grid-area: foto-seis;
@@ -688,31 +710,30 @@
     flex-direction: column;
     align-items: center;
     transition: all 3s;
+}
+.infantiles-card-seis img{
+    width: 100%;
+}
+.infantiles-card-seis img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
 
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+}
+.infantiles-card-seis h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;   
+    text-align: center;
 }
 
+.infantiles-card-seis P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
+}
 
 .infantiles-card-siete{
     grid-area: foto-siete;
@@ -721,31 +742,32 @@
     flex-direction: column;
     align-items: center;
     transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+}
+.infantiles-card-siete img{
+    width: 100%;
 }
 
+.infantiles-card-siete img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
+}
+
+.infantiles-card-siete h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;
+    text-align: center;
+}
+
+.infantiles-card-siete P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
+}
 .infantiles-card-ocho{
     grid-area: foto-ocho;
     padding: 20px;
@@ -753,31 +775,31 @@
     flex-direction: column;
     align-items: center;
     transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+}
+.infantiles-card-ocho img{
+    width: 100%;
 }
 
+.infantiles-card-ocho img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
+}
+.infantiles-card-ocho h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;
+    text-align: center;
+}
+
+.infantiles-card-ocho P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
+}
 
 .infantiles-card-nueve{
     grid-area: foto-nueve;
@@ -786,31 +808,31 @@
     flex-direction: column;
     align-items: center;
     transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+}
+.infantiles-card-nueve img{
+    width: 100%;
 }
 
+.infantiles-card-nueve img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+
+}
+.infantiles-card-nueve h5{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 16px;
+    text-align: center;
+}
+
+.infantiles-card-nueve P{
+    font-family: 'Malgun';
+    src: url(../assets/font/malgun.ttf);
+    color: #6B5344;  
+    font-size: 10px;
+    text-align: center;
+}
 
 /*TRABAJOS*/
 .conteiner-trabajos{
@@ -1135,5 +1157,5 @@
 
 
 
-
+}
 

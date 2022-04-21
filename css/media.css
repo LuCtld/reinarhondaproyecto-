@@ -1,6 +1,71 @@
 
 /*Responsive*/
 
+
+@media (max-width: 420px) {
+
+    /*Todas las paginas*/
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        color: #6B5344;
+        font-family:'Malgun';
+        src: url(../assets/font/malgun.ttf);
+        font-size: 60%;
+        width: 90%;
+        margin-left: 0%;
+        justify-content: center;
+    }
+    
+    .footer__what{
+        width: 15%;
+        height: 15%;
+    }
+    
+    .footer__sobre{
+        width: 15%;
+        height: 15%;
+    }
+
+    /*Mano*/
+    .imagen-mano{
+        display: none;
+    }
+    
+    /*Imagen diseños personalizados*/
+    .diseños-personalizados{
+
+        display: none;
+        
+    }
+    
+    .diseños-personalizados img{
+        width: 100%;
+    }
+
+    /*Aclaraciones Invitaciones - Infantiles - Trabajos */
+    .aclaracion-invitaciones{
+        font-size: 9px;
+    }
+
+    .aclaracion-infantiles{
+        font-size: 9px;
+    }
+
+    .aclaracion-trabajos{
+        font-size: 11px;
+
+    }
+}
+
+
 @media (max-width: 576px) {
 
     /*Todas las paginas*/
@@ -40,11 +105,8 @@
     
     /*Imagen diseños personalizados*/
     .diseños-personalizados{
-        position: relative;
-        z-index: 100;
-        margin-top: 15%;
-        padding-top:  0%;
-        padding-left: 50%;
+
+        display: none;
         
     }
     
