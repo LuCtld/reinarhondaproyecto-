@@ -134,62 +134,22 @@
 }
 
 
-
 /*footer*/
-
-.footer{
-    display: grid;
-    grid-template-columns: 200px 20px 220px 20px 220px;
-    grid-template-areas:
-    "texto" "what" "numeros" "sobre" "mail";
+.footer {
     color: #6B5344;
-    font-family:'Malgun';
-	src: url(../assets/font/malgun.ttf);
+    font-family: "Malgun";
+    src: url(../assets/font/malgun.ttf);
     font-size: 12px;
-    margin-left: 25%;
-    padding: 1.5% 1% 1% 1% ;
-
-    .footer__reina{
-        grid-area: "texto";
-        padding-right: 15px;
-        text-align: right;
-    }
-    
-    .footer__what{
-        grid-area: "what";
-        width: 20px;
-        height: auto;
-    }
-    
-    .footer__numeros{
-        grid-area: "numeros";
-        padding-left: 3px;
-        padding-right: 10px;
-    }
-    
-    .footer__sobre{
-        grid-area: "sobre";
-        width: 20px;
-        height: auto;
-    }
-    
-    .footer__mail{
-        grid-area: "mail";
-        padding-left: 3px;
-    }
+    margin-left: 0%;
+    padding: 1.5% 1% 1% 1%;
+    text-align: center;
 }
 
 
 
 /*Invitaciones*/
+
 .conteiner-invitaciones{
-    display: grid;
-    grid-template-columns: repeat(3);
-    grid-template-rows: repeat(3);
-    grid-template-areas: 
-    "tituloinvita    tituloinvita    imagendiseños"
-    "foto-uno        foto-dos        foto-tres"
-    "foto-cuatro     foto-cinco       foto-seis";
     max-width: 1200px;
     width: 90%;
     margin-left: 70px;
@@ -207,17 +167,26 @@
 }
 
 
+// CARDS IMPORT
+@import "_cards.scss";
+
+// maps
+
+$tamaños-tipos: (
+    'titulos': 50px,
+    'aclaraciones': 16px,
+    'textos': 10px,
+);
+
 .titulo-aclaracion{
-    grid-area: tituloinvita;
     display: inline-flex;
     flex-direction: row;
 }
 
 .titulo-seccion-invitaciones{
-    font-family:'Hoodson';
-	src: url(../assets/font/hoodson.ttf);
+    font-family: $titulos-seccion-font;
     color: #6B5344;   
-    font-size: 40px;
+    font-size: map-get($map: $tamaños-tipos, $key:'titulos');
     padding: 20px 10px 10px 20px;
 }
 
@@ -225,7 +194,7 @@
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
     color: #6B5344;  
-    font-size: 16px;
+    font-size: map-get($map: $tamaños-tipos, $key:'aclaraciones');
     padding: 40px 10px 10px 10px;
 }
 
@@ -245,13 +214,28 @@
     background-color: #FAE3E1;
 }
 
-// CARDS IMPORT
-@import "cards";
+//Mixin
+@mixin cards-h5 ($tipos-cards-color, $tipos-cards-font, 
+$titulos-cards-tamaño,$textos-cards-alineacion) {
+    font-family: $tipos-cards-font;
+    font-size: $titulos-cards-tamaño;
+    text-align: $textos-cards-alineacion;
+    color: $tipos-cards-color;
+}
 
-//Anidacion
+@mixin cards-p ($tipos-cards-color, $tipos-cards-font, 
+$textos-cards-tamaño, $textos-cards-alineacion) {
+    font-family: $tipos-cards-font;
+    font-size: $textos-cards-tamaño;
+    text-align: $textos-cards-alineacion;
+    color: $tipos-cards-color;
+}
+
+
+
+//Anidacion - Extend - Variables
 .invitacion-card-uno{
-    grid-area: foto-uno;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -267,187 +251,37 @@
     }
 
     h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
+        @include cards-h5 ($tipos-cards-color, $tipos-cards-font, 
+        $titulos-cards-tamaño,$textos-cards-alineacion);
     }
     
     P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
+        @include cards-p ($tipos-cards-color, $tipos-cards-font, 
+        $textos-cards-tamaño, $textos-cards-alineacion)
     }
 
 }
 
 .invitacion-card-dos{
-    grid-area: foto-dos;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition:all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
-
+    @extend .invitacion-card-uno;
 }
 
 .invitacion-card-tres{
-    grid-area: foto-tres;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition:all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
-
-    
+    @extend .invitacion-card-uno;
 }
 
 
 .invitacion-card-cuatro{
-    grid-area: foto-cuatro;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition:all 3s;
-    
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }    
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
-    
+    @extend .invitacion-card-uno;
 }
 
 .invitacion-card-cinco{
-    grid-area: foto-cinco;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition:all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }           
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+    @extend .invitacion-card-uno;
 }
 
 
 .invitacion-card-seis{
-    grid-area: foto-seis;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition:all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
-
-
+    @extend .invitacion-card-uno;
 }
 
 
@@ -455,397 +289,91 @@
 
 /*INFANTILES*/
 .conteiner-infantiles{
-    display: grid;
-    grid-template-columns: repeat(3);
-    grid-template-rows: repeat(4);
-    grid-template-areas: 
-    "tituloinvita    tituloinvita    imagendiseños"
-    "foto-uno        foto-dos        foto-tres"
-    "foto-cuatro     foto-cinco       foto-seis"
-    "foto-siete      foto-ocho       foto-nueve";
-    max-width: 1200px;
-    width: 90%;
-    margin-left: 70px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-right: 20px;
-    background-color: #FAE3E1;
-    align-items: center;
-    align-content: center;
+    @extend .conteiner-invitaciones;
 }
 
 
 .titulo-aclaracion-infantiles{
-    grid-area: tituloinvita;
-    display: inline-flex;
-    flex-direction: row;
+    @extend .titulo-aclaracion;
 }
 
 .titulo-seccion-infantiles{
-    font-family:'Hoodson';
-	src: url(../assets/font/hoodson.ttf);
-    color: #6B5344;   
-    font-size: 40px;
-    padding: 20px 10px 10px 20px;
+    @extend .titulo-seccion-invitaciones;
 }
 
 .aclaracion-infantiles{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
-    font-size: 16px;
-    padding: 40px 10px 10px 10px;
+    @extend .aclaracion-invitaciones;
 }
 
 .diseños-personalizados-infantiles{
-    grid-area: imagendiseños;
-    padding: 25px 20px 20px 20px;
-    align-content: flex-end;
+    @extend .diseños-personalizados;
 }
 
-.diseños-personalizados-infantiles img{
-    width: 280px;
-    height: 50px;
-}
 
 /*Fotos*/
 
 .infantiles-card-uno{
-    grid-area: foto-uno;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
-
+    @extend .invitacion-card-uno;
     
 }
 
 
 
 .infantiles-card-dos{
-    grid-area: foto-dos;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-    
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+    @extend .invitacion-card-uno;
 }
 
 
 .infantiles-card-tres{
-    grid-area: foto-tres;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+    @extend .invitacion-card-uno;
 }
 
 
 
 .infantiles-card-cuatro{
-    grid-area: foto-cuatro;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+    @extend .invitacion-card-uno;
 }
 
 
 
 .infantiles-card-cinco{
-    grid-area: foto-cinco;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+    @extend .invitacion-card-uno;
 }
 
 
 
 .infantiles-card-seis{
-    grid-area: foto-seis;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+    @extend .invitacion-card-uno;
 }
 
 
 .infantiles-card-siete{
-    grid-area: foto-siete;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+    @extend .invitacion-card-uno;
 }
 
 .infantiles-card-ocho{
-    grid-area: foto-ocho;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+    @extend .invitacion-card-uno;
 }
 
 
 .infantiles-card-nueve{
-    grid-area: foto-nueve;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 3s;
-
-    img{
-        width: 100%;
-        &:hover{
-            position: relative;
-            z-index: 100;
-            width: 120%;
-        }
-    }
-
-    h5{
-        font-family: $tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $titulos-cards-tamaño;
-        text-align: $textos-cards-alineacion;
-    }
-    
-    P{
-        font-family:$tipos-cards-font;
-        color: $tipos-cards-color;  
-        font-size: $textos-cards-tamaño;
-        text-align: $textos-cards-alineacion;   
-    }
+    @extend .invitacion-card-uno;
 }
 
 
 /*TRABAJOS*/
 .conteiner-trabajos{
-    display: grid;
-    grid-template-columns: repeat(1);
-    grid-template-rows: repeat(7);
-    grid-template-areas: 
-    "tituloinvita"
-    "foto-uno"
-    "foto-dos"
-    "foto-tres";
-    max-width: 1200px;
-    width: 90%;
-    margin-left: 70px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-right: 20px;
-    background-color: #FAE3E1;
-    align-items: center;
-    align-content: center;
+    @extend .conteiner-invitaciones;
 }
 
 
 .titulo-aclaracion-trabajos{
-    grid-area: tituloinvita;
     display: inline-flex;
     flex-direction: row;
 }
 
 .titulo-seccion-trabajos{
-    font-family:'Hoodson';
-	src: url(../assets/font/hoodson.ttf);
-    color: #6B5344;   
-    font-size: 40px;
-    padding: 20px 10px 10px 20px;
+    @extend .titulo-seccion-invitaciones;
 }
 
 .aclaracion-trabajos{
@@ -859,7 +387,6 @@
 /*Fotos*/
 
 .trabajos-card-uno{
-    grid-area: foto-uno;
     padding: 20px;;
     display: flex;
     flex-direction: column;
@@ -887,7 +414,6 @@
 }
 
 .trabajos-card-dos{
-    grid-area: foto-dos;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -916,7 +442,6 @@
 }
 
 .trabajos-card-tres{
-    grid-area: foto-tres;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -945,31 +470,11 @@
 
 /*Contacto*/
 .conteiner-contacto{
-    display: grid;
-    grid-template-columns: repeat(2);
-    grid-template-rows: repeat(6);
-    grid-template-areas: 
-    "titulocontacto  titulocontacto"
-    "textocontacto    formulario"
-    "telefono         formulario"
-    "mail             formulario"
-    "insta            formulario"
-    "face             formulario";
-    max-width: 1200px;
-    width: 90%;
-    margin-left: 70px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-right: 20px;
-    background-color: #FAE3E1;
-    align-items: center;
-    align-content: center;
+    @extend .conteiner-invitaciones;
 }
 
 .contacto-titulo{
-    grid-area: titulocontacto;
-    font-family:'Hoodson';
-	src: url(../assets/font/hoodson.ttf);
+    font-family:$titulos-seccion-font;
     color: #6B5344;   
     font-size: 40px;
     padding: 20px 10px 10px 20px;
@@ -984,7 +489,6 @@
 }
 
 .contacto-texto{
-    grid-area:textocontacto;
     padding: 10px 100px 10px 30px;
 
 }

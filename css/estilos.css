@@ -126,47 +126,17 @@
 
 /*footer*/
 .footer {
-  display: grid;
-  grid-template-columns: 200px 20px 220px 20px 220px;
-  grid-template-areas: "texto" "what" "numeros" "sobre" "mail";
   color: #6B5344;
   font-family: "Malgun";
   src: url(../assets/font/malgun.ttf);
   font-size: 12px;
-  margin-left: 25%;
+  margin-left: 0%;
   padding: 1.5% 1% 1% 1%;
-}
-.footer .footer__reina {
-  grid-area: "texto";
-  padding-right: 15px;
-  text-align: right;
-}
-.footer .footer__what {
-  grid-area: "what";
-  width: 20px;
-  height: auto;
-}
-.footer .footer__numeros {
-  grid-area: "numeros";
-  padding-left: 3px;
-  padding-right: 10px;
-}
-.footer .footer__sobre {
-  grid-area: "sobre";
-  width: 20px;
-  height: auto;
-}
-.footer .footer__mail {
-  grid-area: "mail";
-  padding-left: 3px;
+  text-align: center;
 }
 
 /*Invitaciones*/
-.conteiner-invitaciones {
-  display: grid;
-  grid-template-columns: repeat(3);
-  grid-template-rows: repeat(3);
-  grid-template-areas: "tituloinvita    tituloinvita    imagendiseños" "foto-uno        foto-dos        foto-tres" "foto-cuatro     foto-cinco       foto-seis";
+.conteiner-invitaciones, .conteiner-contacto, .conteiner-trabajos, .conteiner-infantiles {
   max-width: 1200px;
   width: 90%;
   margin-left: 70px;
@@ -182,21 +152,19 @@
   background-color: #FAE3E1;
 }
 
-.titulo-aclaracion {
-  grid-area: tituloinvita;
+.titulo-aclaracion, .titulo-aclaracion-infantiles {
   display: inline-flex;
   flex-direction: row;
 }
 
-.titulo-seccion-invitaciones {
+.titulo-seccion-invitaciones, .titulo-seccion-trabajos, .titulo-seccion-infantiles {
   font-family: "Hoodson";
-  src: url(../assets/font/hoodson.ttf);
   color: #6B5344;
-  font-size: 40px;
+  font-size: 50px;
   padding: 20px 10px 10px 20px;
 }
 
-.aclaracion-invitaciones {
+.aclaracion-invitaciones, .aclaracion-infantiles {
   font-family: "Malgun";
   src: url(../assets/font/malgun.ttf);
   color: #6B5344;
@@ -204,13 +172,13 @@
   padding: 40px 10px 10px 10px;
 }
 
-.diseños-personalizados {
+.diseños-personalizados, .diseños-personalizados-infantiles {
   position: absolute;
   z-index: 100;
   padding-top: 2%;
   padding-left: 70%;
 }
-.diseños-personalizados img {
+.diseños-personalizados img, .diseños-personalizados-infantiles img {
   width: 80%;
 }
 
@@ -219,521 +187,40 @@
   background-color: #FAE3E1;
 }
 
-.invitacion-card-uno {
-  grid-area: foto-uno;
-  padding: 20px;
+.invitacion-card-uno, .infantiles-card-nueve, .infantiles-card-ocho, .infantiles-card-siete, .infantiles-card-seis, .infantiles-card-cinco, .infantiles-card-cuatro, .infantiles-card-tres, .infantiles-card-dos, .infantiles-card-uno, .invitacion-card-seis, .invitacion-card-cinco, .invitacion-card-cuatro, .invitacion-card-tres, .invitacion-card-dos {
+  padding: 20px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: all 3s;
 }
-.invitacion-card-uno img {
+.invitacion-card-uno img, .infantiles-card-nueve img, .infantiles-card-ocho img, .infantiles-card-siete img, .infantiles-card-seis img, .infantiles-card-cinco img, .infantiles-card-cuatro img, .infantiles-card-tres img, .infantiles-card-dos img, .infantiles-card-uno img, .invitacion-card-seis img, .invitacion-card-cinco img, .invitacion-card-cuatro img, .invitacion-card-tres img, .invitacion-card-dos img {
   width: 100%;
 }
-.invitacion-card-uno img:hover {
+.invitacion-card-uno img:hover, .infantiles-card-nueve img:hover, .infantiles-card-ocho img:hover, .infantiles-card-siete img:hover, .infantiles-card-seis img:hover, .infantiles-card-cinco img:hover, .infantiles-card-cuatro img:hover, .infantiles-card-tres img:hover, .infantiles-card-dos img:hover, .infantiles-card-uno img:hover, .invitacion-card-seis img:hover, .invitacion-card-cinco img:hover, .invitacion-card-cuatro img:hover, .invitacion-card-tres img:hover, .invitacion-card-dos img:hover {
   position: relative;
   z-index: 100;
   width: 120%;
 }
-.invitacion-card-uno h5 {
+.invitacion-card-uno h5, .infantiles-card-nueve h5, .infantiles-card-ocho h5, .infantiles-card-siete h5, .infantiles-card-seis h5, .infantiles-card-cinco h5, .infantiles-card-cuatro h5, .infantiles-card-tres h5, .infantiles-card-dos h5, .infantiles-card-uno h5, .invitacion-card-seis h5, .invitacion-card-cinco h5, .invitacion-card-cuatro h5, .invitacion-card-tres h5, .invitacion-card-dos h5 {
   font-family: "Malgun";
-  color: #6B5344;
   font-size: 16px;
   text-align: center;
-}
-.invitacion-card-uno P {
-  font-family: "Malgun";
   color: #6B5344;
+}
+.invitacion-card-uno P, .infantiles-card-nueve P, .infantiles-card-ocho P, .infantiles-card-siete P, .infantiles-card-seis P, .infantiles-card-cinco P, .infantiles-card-cuatro P, .infantiles-card-tres P, .infantiles-card-dos P, .infantiles-card-uno P, .invitacion-card-seis P, .invitacion-card-cinco P, .invitacion-card-cuatro P, .invitacion-card-tres P, .invitacion-card-dos P {
+  font-family: "Malgun";
   font-size: 10px;
   text-align: center;
-}
-
-.invitacion-card-dos {
-  grid-area: foto-dos;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.invitacion-card-dos img {
-  width: 100%;
-}
-.invitacion-card-dos img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.invitacion-card-dos h5 {
-  font-family: "Malgun";
   color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.invitacion-card-dos P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
-}
-
-.invitacion-card-tres {
-  grid-area: foto-tres;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.invitacion-card-tres img {
-  width: 100%;
-}
-.invitacion-card-tres img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.invitacion-card-tres h5 {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.invitacion-card-tres P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
-}
-
-.invitacion-card-cuatro {
-  grid-area: foto-cuatro;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.invitacion-card-cuatro img {
-  width: 100%;
-}
-.invitacion-card-cuatro img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.invitacion-card-cuatro h5 {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.invitacion-card-cuatro P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
-}
-
-.invitacion-card-cinco {
-  grid-area: foto-cinco;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.invitacion-card-cinco img {
-  width: 100%;
-}
-.invitacion-card-cinco img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.invitacion-card-cinco h5 {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.invitacion-card-cinco P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
-}
-
-.invitacion-card-seis {
-  grid-area: foto-seis;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.invitacion-card-seis img {
-  width: 100%;
-}
-.invitacion-card-seis img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.invitacion-card-seis h5 {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.invitacion-card-seis P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
 }
 
 /*INFANTILES*/
-.conteiner-infantiles {
-  display: grid;
-  grid-template-columns: repeat(3);
-  grid-template-rows: repeat(4);
-  grid-template-areas: "tituloinvita    tituloinvita    imagendiseños" "foto-uno        foto-dos        foto-tres" "foto-cuatro     foto-cinco       foto-seis" "foto-siete      foto-ocho       foto-nueve";
-  max-width: 1200px;
-  width: 90%;
-  margin-left: 70px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  margin-right: 20px;
-  background-color: #FAE3E1;
-  align-items: center;
-  align-content: center;
-}
-
-.titulo-aclaracion-infantiles {
-  grid-area: tituloinvita;
-  display: inline-flex;
-  flex-direction: row;
-}
-
-.titulo-seccion-infantiles {
-  font-family: "Hoodson";
-  src: url(../assets/font/hoodson.ttf);
-  color: #6B5344;
-  font-size: 40px;
-  padding: 20px 10px 10px 20px;
-}
-
-.aclaracion-infantiles {
-  font-family: "Malgun";
-  src: url(../assets/font/malgun.ttf);
-  color: #6B5344;
-  font-size: 16px;
-  padding: 40px 10px 10px 10px;
-}
-
-.diseños-personalizados-infantiles {
-  grid-area: imagendiseños;
-  padding: 25px 20px 20px 20px;
-  align-content: flex-end;
-}
-
-.diseños-personalizados-infantiles img {
-  width: 280px;
-  height: 50px;
-}
-
 /*Fotos*/
-.infantiles-card-uno {
-  grid-area: foto-uno;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.infantiles-card-uno img {
-  width: 100%;
-}
-.infantiles-card-uno img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.infantiles-card-uno h5 {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.infantiles-card-uno P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
-}
-
-.infantiles-card-dos {
-  grid-area: foto-dos;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.infantiles-card-dos img {
-  width: 100%;
-}
-.infantiles-card-dos img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.infantiles-card-dos h5 {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.infantiles-card-dos P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
-}
-
-.infantiles-card-tres {
-  grid-area: foto-tres;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.infantiles-card-tres img {
-  width: 100%;
-}
-.infantiles-card-tres img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.infantiles-card-tres h5 {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.infantiles-card-tres P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
-}
-
-.infantiles-card-cuatro {
-  grid-area: foto-cuatro;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.infantiles-card-cuatro img {
-  width: 100%;
-}
-.infantiles-card-cuatro img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.infantiles-card-cuatro h5 {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.infantiles-card-cuatro P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
-}
-
-.infantiles-card-cinco {
-  grid-area: foto-cinco;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.infantiles-card-cinco img {
-  width: 100%;
-}
-.infantiles-card-cinco img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.infantiles-card-cinco h5 {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.infantiles-card-cinco P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
-}
-
-.infantiles-card-seis {
-  grid-area: foto-seis;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.infantiles-card-seis img {
-  width: 100%;
-}
-.infantiles-card-seis img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.infantiles-card-seis h5 {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.infantiles-card-seis P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
-}
-
-.infantiles-card-siete {
-  grid-area: foto-siete;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.infantiles-card-siete img {
-  width: 100%;
-}
-.infantiles-card-siete img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.infantiles-card-siete h5 {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.infantiles-card-siete P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
-}
-
-.infantiles-card-ocho {
-  grid-area: foto-ocho;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.infantiles-card-ocho img {
-  width: 100%;
-}
-.infantiles-card-ocho img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.infantiles-card-ocho h5 {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.infantiles-card-ocho P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
-}
-
-.infantiles-card-nueve {
-  grid-area: foto-nueve;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 3s;
-}
-.infantiles-card-nueve img {
-  width: 100%;
-}
-.infantiles-card-nueve img:hover {
-  position: relative;
-  z-index: 100;
-  width: 120%;
-}
-.infantiles-card-nueve h5 {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 16px;
-  text-align: center;
-}
-.infantiles-card-nueve P {
-  font-family: "Malgun";
-  color: #6B5344;
-  font-size: 10px;
-  text-align: center;
-}
-
 /*TRABAJOS*/
-.conteiner-trabajos {
-  display: grid;
-  grid-template-columns: repeat(1);
-  grid-template-rows: repeat(7);
-  grid-template-areas: "tituloinvita" "foto-uno" "foto-dos" "foto-tres";
-  max-width: 1200px;
-  width: 90%;
-  margin-left: 70px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  margin-right: 20px;
-  background-color: #FAE3E1;
-  align-items: center;
-  align-content: center;
-}
-
 .titulo-aclaracion-trabajos {
-  grid-area: tituloinvita;
   display: inline-flex;
   flex-direction: row;
-}
-
-.titulo-seccion-trabajos {
-  font-family: "Hoodson";
-  src: url(../assets/font/hoodson.ttf);
-  color: #6B5344;
-  font-size: 40px;
-  padding: 20px 10px 10px 20px;
 }
 
 .aclaracion-trabajos {
@@ -746,7 +233,6 @@
 
 /*Fotos*/
 .trabajos-card-uno {
-  grid-area: foto-uno;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -775,7 +261,6 @@
 }
 
 .trabajos-card-dos {
-  grid-area: foto-dos;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -804,7 +289,6 @@
 }
 
 .trabajos-card-tres {
-  grid-area: foto-tres;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -833,26 +317,8 @@
 }
 
 /*Contacto*/
-.conteiner-contacto {
-  display: grid;
-  grid-template-columns: repeat(2);
-  grid-template-rows: repeat(6);
-  grid-template-areas: "titulocontacto  titulocontacto" "textocontacto    formulario" "telefono         formulario" "mail             formulario" "insta            formulario" "face             formulario";
-  max-width: 1200px;
-  width: 90%;
-  margin-left: 70px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  margin-right: 20px;
-  background-color: #FAE3E1;
-  align-items: center;
-  align-content: center;
-}
-
 .contacto-titulo {
-  grid-area: titulocontacto;
   font-family: "Hoodson";
-  src: url(../assets/font/hoodson.ttf);
   color: #6B5344;
   font-size: 40px;
   padding: 20px 10px 10px 20px;
@@ -867,7 +333,6 @@
 }
 
 .contacto-texto {
-  grid-area: textocontacto;
   padding: 10px 100px 10px 30px;
 }
 
