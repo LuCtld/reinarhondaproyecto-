@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+/*Tipo*/
+@import "_fonts.scss";
+
+/*Colores*/
+@import "_colores.scss";
+
+/*Cards*/
+@import "_cards.scss";
+
+
 /* regla para usar una font descargada a la pc */
 @font-face {
 	font-family: 'Hoodson';
@@ -22,16 +32,9 @@
 }
 
 /*header*/
-.container-header{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas: 
-    "logo nav";
-}
+
 
 .logo{
-    grid-area: logo;
     padding: 0px 0px 0px 0px;
 }
 .logo img{
@@ -39,15 +42,12 @@
     height: auto;
 }
 
-
-
 /*NAV*/
 
 
 .nav-item{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family:$textos-general-font;
+    color: $titulos-textos-color;  
 }
 
 .navbar-brand img{
@@ -55,26 +55,9 @@
     width: 40px;
 }
 
-.custom-toggler.navbar-toggler {
-    border-color: lightgreen;
-}
 
 /*Index*/
 
-
-.conteiner-main{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "texto imagen";
-    max-width: 1200px;
-    width: 90%;
-    margin-left: 70px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    /*background-color: #FAE3E1;*/
-    background-image: radial-gradient(#FAEDEB,#EDB9B4);
-}
 
 .texto{
     grid-area: "texto";
@@ -82,16 +65,14 @@
 }
 
 .titulo-seccion{
-    font-family:'Hoodson';
-	src: url(../assets/font/hoodson.ttf);
-    color: #6B5344;   
+    font-family:$titulos-principales-font;
+    color: $titulos-textos-color;   
     font-size: 40px;
 }
 
 .texto-inicio{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color: $titulos-textos-color;  
     font-size: 16px;
     line-height: 180%;
     padding-right: 20px;
@@ -127,9 +108,8 @@
 
 /*footer*/
 .footer {
-    color: #6B5344;
-    font-family: "Malgun";
-    src: url(../assets/font/malgun.ttf);
+    color: $titulos-textos-color;
+    font-family: $textos-general-font;
     font-size: 12px;
     margin-left: 0%;
     padding: 1.5% 1% 1% 1%;
@@ -147,19 +127,17 @@
     margin-top: 10px;
     margin-bottom: 5px;
     margin-right: 20px;
-    background-color: #FAE3E1;
+    background-color: $conteiner-color;
     align-items: center;
     align-content: center;
 }
 
 .container-color{
-    background-color: #FAE3E1;
+    background-color:$conteiner-color;
 
 }
 
 
-// CARDS IMPORT
-@import "_cards.scss";
 
 // maps
 
@@ -175,16 +153,15 @@ $tamaños-tipos: (
 }
 
 .titulo-seccion-invitaciones{
-    font-family: $titulos-seccion-font;
-    color: #6B5344;   
+    font-family: $titulos-principales-font;
+    color: $titulos-textos-color;   
     font-size: map-get($map: $tamaños-tipos, $key:'titulos');
     padding: 20px 10px 10px 20px;
 }
 
 .aclaracion-invitaciones{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family:$textos-general-font;
+    color:$titulos-textos-color;  
     font-size: map-get($map: $tamaños-tipos, $key:'aclaraciones');
     padding: 40px 10px 10px 10px;
 }
@@ -202,7 +179,7 @@ $tamaños-tipos: (
 
 /*CARDS INVITACIONES*/
 .color-card{
-    background-color: #FAE3E1;
+    background-color: $conteiner-color;
 }
 
 //Mixin
@@ -369,9 +346,8 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 }
 
 .aclaracion-trabajos{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color: $titulos-textos-color;  
     font-size: 16px;
     padding: 40px 10px 10px 10px;
 }
@@ -390,16 +366,14 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
     height: auto;
 }
 .trabajos-card-uno h5{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color: $titulos-textos-color;  
     font-size: 20px;
 }
 
 .trabajos-card-uno P{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color: $titulos-textos-color;  
     font-size: 16px;
     text-align: left;
     margin-bottom: 10px;
@@ -417,16 +391,14 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 }
 
 .trabajos-card-dos h5{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color:$titulos-textos-color;  
     font-size: 20px;
 }
 
 .trabajos-card-dos P{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color: $titulos-textos-color;  
     font-size: 16px;
     text-align: left;
     margin-bottom: 10px;
@@ -444,16 +416,14 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
     height: auto;
 }
 .trabajos-card-tres h5{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color:$titulos-textos-color;  
     font-size: 20px;
 }
 
 .trabajos-card-tres P{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color:$titulos-textos-color;  
     font-size: 16px;
     text-align: left;
     margin-bottom: 10px;
@@ -467,15 +437,14 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 
 .contacto-titulo{
     font-family:$titulos-seccion-font;
-    color: #6B5344;   
+    color: $titulos-textos-color;   
     font-size: 40px;
     padding: 20px 10px 10px 20px;
 }
 
 .contacto-titulo h2{
-    font-family:'Hoodson';
-	src: url(../assets/font/hoodson.ttf);
-    color: #6B5344;   
+    font-family:$titulos-principales-font;
+    color:$titulos-textos-color;   
     font-size: 60px;
     padding: 20px 10px 10px 20px;
 }
@@ -486,9 +455,8 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 }
 
 .contacto-texto p{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color:$titulos-textos-color;  
     font-size: 14px;
     text-align: left;
     line-height: 200%;
@@ -509,9 +477,8 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 }
 
 .contacto-telefono p{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color: $titulos-textos-color;  
     font-size: 12px;
     text-align: left;
     margin-left: 5px;
@@ -531,9 +498,8 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 }
 
 .contacto-mail p{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color: $titulos-textos-color;  
     font-size: 12px;
     text-align: left;
     margin-left: 5px;
@@ -554,9 +520,8 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 
 .contacto-ig p{
     margin-left: 5px;
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color: $titulos-textos-color;  
     font-size: 12px;
     text-align: left;
 }
@@ -574,9 +539,8 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 }
 
 .contacto-face p{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color: $titulos-textos-color;  
     font-size: 12px;
     text-align: left;
     margin-left: 5px;
@@ -591,18 +555,16 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 }
 
 .titulosformularios{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color: $titulos-textos-color;  
     font-size: 16px;
     text-align: left;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 .textosformularios{
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;  
+    font-family: $textos-general-font;
+    color: $titulos-textos-color;  
     font-size: 12px;
     text-align: left;
     padding-top: 5px;
@@ -613,21 +575,17 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
     width: 100px;
     height: 50px;
     background-color: #BF8A8B;
-    font-family:'Hoodson';
-	src: url(../assets/font/hoodson.ttf);
+    font-family:$titulos-principales-font;
     font-size: 18px;
-    color: #FAE3E1;
+    color: $conteiner-color;
     border: none;
 }
 
-.menu-desplegable{
-    background-color: #BF8A8B;
-    border: none;
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    font-size: 12px;
-    color: #FAE3E1;
+.form-label{
+    font-family: $textos-general-font;
+    color: $titulos-textos-color;  
 }
+
 
 
 
