@@ -38,33 +38,22 @@
   height: auto;
 }
 
-/*en Boot
-
-.nav{
-    grid-area: nav;
-    padding: 60px 70px 0px 60px;
-
-    .nav-ul{
-    display: flex;
-    justify-content: left;
-    list-style: none;    
-    }
-
-    .nav-ul-li{
-    text-decoration: none;
-    padding: 0px 10px;
-    }
-
-    a{
-    text-decoration: none;
-    font-family: 'Malgun';
-    src: url(../assets/font/malgun.ttf);
-    color: #6B5344;   
-
-    }
-
+/*NAV*/
+.nav-item {
+  font-family: "Malgun";
+  src: url(../assets/font/malgun.ttf);
+  color: #6B5344;
 }
-*/
+
+.navbar-brand img {
+  display: none;
+  width: 40px;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: lightgreen;
+}
+
 /*Index*/
 .conteiner-main {
   display: grid;
@@ -192,15 +181,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 3s;
 }
 .invitacion-card-uno img, .infantiles-card-nueve img, .infantiles-card-ocho img, .infantiles-card-siete img, .infantiles-card-seis img, .infantiles-card-cinco img, .infantiles-card-cuatro img, .infantiles-card-tres img, .infantiles-card-dos img, .infantiles-card-uno img, .invitacion-card-seis img, .invitacion-card-cinco img, .invitacion-card-cuatro img, .invitacion-card-tres img, .invitacion-card-dos img {
   width: 100%;
 }
 .invitacion-card-uno img:hover, .infantiles-card-nueve img:hover, .infantiles-card-ocho img:hover, .infantiles-card-siete img:hover, .infantiles-card-seis img:hover, .infantiles-card-cinco img:hover, .infantiles-card-cuatro img:hover, .infantiles-card-tres img:hover, .infantiles-card-dos img:hover, .infantiles-card-uno img:hover, .invitacion-card-seis img:hover, .invitacion-card-cinco img:hover, .invitacion-card-cuatro img:hover, .invitacion-card-tres img:hover, .invitacion-card-dos img:hover {
-  position: relative;
   z-index: 100;
-  width: 120%;
+  transform: scale(1.2);
 }
 .invitacion-card-uno h5, .infantiles-card-nueve h5, .infantiles-card-ocho h5, .infantiles-card-siete h5, .infantiles-card-seis h5, .infantiles-card-cinco h5, .infantiles-card-cuatro h5, .infantiles-card-tres h5, .infantiles-card-dos h5, .infantiles-card-uno h5, .invitacion-card-seis h5, .invitacion-card-cinco h5, .invitacion-card-cuatro h5, .invitacion-card-tres h5, .invitacion-card-dos h5 {
   font-family: "Malgun";

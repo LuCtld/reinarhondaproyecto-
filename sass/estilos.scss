@@ -39,34 +39,25 @@
     height: auto;
 }
 
-/*en Boot
 
-.nav{
-    grid-area: nav;
-    padding: 60px 70px 0px 60px;
 
-    .nav-ul{
-    display: flex;
-    justify-content: left;
-    list-style: none;    
-    }
+/*NAV*/
 
-    .nav-ul-li{
-    text-decoration: none;
-    padding: 0px 10px;
-    }
 
-    a{
-    text-decoration: none;
+.nav-item{
     font-family: 'Malgun';
     src: url(../assets/font/malgun.ttf);
-    color: #6B5344;   
-
-    }
-
+    color: #6B5344;  
 }
-*/
 
+.navbar-brand img{
+    display: none;
+    width: 40px;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: lightgreen;
+}
 
 /*Index*/
 
@@ -239,14 +230,15 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition:all 3s;
+    
 
     img{
         width: 100%;
         &:hover{
-            position: relative;
             z-index: 100;
-            width: 120%;        
+            transform: scale(1.2);
+
+
         }
     }
 
