@@ -78,7 +78,10 @@
 
     }
 
-
+    .mb-3{
+        width: 90%;
+    }
+    
 }
 
 
@@ -152,7 +155,10 @@
 
     .aclaracion-trabajos{
         font-size: 11px;
-
+    }
+    
+    .mb-3{
+        width: 90%;
     }
 }
 
@@ -233,6 +239,9 @@
     
         }
 
+        .mb-3{
+            width: 90%;
+        }
 }
 
 @media (max-width: 992px){
@@ -308,7 +317,10 @@
     
         .aclaracion-trabajos{
             font-size: 11px;
-    
         }
+        
+    .mb-3{
+        width: 90%;
+    }
 
 }

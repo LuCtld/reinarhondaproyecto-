@@ -44,6 +44,9 @@
 
 /*NAV*/
 
+.navbar-toggler-icon{
+    background-image: url(../assets/images/burgericondos.png)
+}
 
 .nav-item{
     font-family:$textos-general-font;
@@ -136,8 +139,6 @@
     background-color:$conteiner-color;
 
 }
-
-
 
 // maps
 
@@ -254,13 +255,10 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 }
 
 
-
-
 /*INFANTILES*/
 .conteiner-infantiles{
     @extend .conteiner-invitaciones;
 }
-
 
 .titulo-aclaracion-infantiles{
     @extend .titulo-aclaracion;
@@ -279,42 +277,31 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 }
 
 
-/*Fotos*/
+/*Articulos Seccion Infantiles*/
 
 .infantiles-card-uno{
     @extend .invitacion-card-uno;
-    
 }
-
-
 
 .infantiles-card-dos{
     @extend .invitacion-card-uno;
 }
 
-
 .infantiles-card-tres{
     @extend .invitacion-card-uno;
 }
-
-
 
 .infantiles-card-cuatro{
     @extend .invitacion-card-uno;
 }
 
-
-
 .infantiles-card-cinco{
     @extend .invitacion-card-uno;
 }
 
-
-
 .infantiles-card-seis{
     @extend .invitacion-card-uno;
 }
-
 
 .infantiles-card-siete{
     @extend .invitacion-card-uno;
@@ -323,7 +310,6 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 .infantiles-card-ocho{
     @extend .invitacion-card-uno;
 }
-
 
 .infantiles-card-nueve{
     @extend .invitacion-card-uno;
@@ -547,12 +533,7 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 }
 
 /*Formulario*/
-.formualario{
-    grid-area: formulario;
-    width: 600px;
-    padding-top: 45px;
-    padding-bottom: 20px;
-}
+
 
 .titulosformularios{
     font-family: $textos-general-font;
@@ -570,7 +551,7 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
+/*
 .boton{
     width: 100px;
     height: 50px;
@@ -580,14 +561,16 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
     color: $conteiner-color;
     border: none;
 }
+*/
 
 .form-label{
     font-family: $textos-general-font;
     color: $titulos-textos-color;  
 }
 
-
-
+button {
+    background-color: $rosa-acento-color;
+}
 
 
 

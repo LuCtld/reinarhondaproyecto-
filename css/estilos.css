@@ -35,6 +35,10 @@
 }
 
 /*NAV*/
+.navbar-toggler-icon {
+  background-image: url(../assets/images/burgericondos.png);
+}
+
 .nav-item {
   font-family: "Malgun";
   color: #6B5344;
@@ -177,7 +181,7 @@
 }
 
 /*INFANTILES*/
-/*Fotos*/
+/*Articulos Seccion Infantiles*/
 /*TRABAJOS*/
 .titulo-aclaracion-trabajos {
   display: inline-flex;
@@ -381,13 +385,6 @@
 }
 
 /*Formulario*/
-.formualario {
-  grid-area: formulario;
-  width: 600px;
-  padding-top: 45px;
-  padding-bottom: 20px;
-}
-
 .titulosformularios {
   font-family: "Malgun";
   color: #6B5344;
@@ -406,19 +403,24 @@
   padding-bottom: 5px;
 }
 
-.boton {
-  width: 100px;
-  height: 50px;
-  background-color: #BF8A8B;
-  font-family: "Hoodson";
-  font-size: 18px;
-  color: #FAEDEB;
-  border: none;
+/*
+.boton{
+    width: 100px;
+    height: 50px;
+    background-color: #BF8A8B;
+    font-family:$titulos-principales-font;
+    font-size: 18px;
+    color: $conteiner-color;
+    border: none;
 }
-
+*/
 .form-label {
   font-family: "Malgun";
   color: #6B5344;
+}
+
+button {
+  background-color: #BF8A8B;
 }
 
 /*# sourceMappingURL=estilos.css.map */
