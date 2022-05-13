@@ -341,7 +341,7 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 /*Fotos*/
 
 .trabajos-card-uno{
-    padding: 20px;;
+    padding: 50px;;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -366,54 +366,11 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 }
 
 .trabajos-card-dos{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-.trabajos-card-dos img{
-    width: 100%;
-    height: auto;
-}
-
-.trabajos-card-dos h5{
-    font-family: $textos-general-font;
-    color:$titulos-textos-color;  
-    font-size: 20px;
-}
-
-.trabajos-card-dos P{
-    font-family: $textos-general-font;
-    color: $titulos-textos-color;  
-    font-size: 16px;
-    text-align: left;
-    margin-bottom: 10px;
-
+    @extend .trabajos-card-uno;
 }
 
 .trabajos-card-tres{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-.trabajos-card-tres img{
-    width: 100%;
-    height: auto;
-}
-.trabajos-card-tres h5{
-    font-family: $textos-general-font;
-    color:$titulos-textos-color;  
-    font-size: 20px;
-}
-
-.trabajos-card-tres P{
-    font-family: $textos-general-font;
-    color:$titulos-textos-color;  
-    font-size: 16px;
-    text-align: left;
-    margin-bottom: 10px;
-
+    @extend .trabajos-card-uno;
 }
 
 /*Contacto*/
@@ -449,91 +406,7 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 
 }
 
-.contacto-telefono{
-    grid-area: telefono;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-items: center;
-    padding: 100px 0px 0px 30px;
-}
-
-.contacto-telefono img{
-    width: 30px;
-}
-
-.contacto-telefono p{
-    font-family: $textos-general-font;
-    color: $titulos-textos-color;  
-    font-size: 12px;
-    text-align: left;
-    margin-left: 5px;
-}
-
-.contacto-mail{
-    grid-area: mail;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-items: center;
-    padding: 0px 0px 0px 30px;
-}
-
-.contacto-mail img{
-    width: 30px;
-}
-
-.contacto-mail p{
-    font-family: $textos-general-font;
-    color: $titulos-textos-color;  
-    font-size: 12px;
-    text-align: left;
-    margin-left: 5px;
-}
-
-.contacto-ig{
-    grid-area: insta;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-items: center;
-    padding: 10px 0px 0px 30px;
-}
-
-.contacto-ig img{
-    width: 30px;
-}
-
-.contacto-ig p{
-    margin-left: 5px;
-    font-family: $textos-general-font;
-    color: $titulos-textos-color;  
-    font-size: 12px;
-    text-align: left;
-}
-
-.contacto-face{
-    grid-area: face;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 0px 0px 30px;
-}
-
-.contacto-face img{
-    width: 30px;
-}
-
-.contacto-face p{
-    font-family: $textos-general-font;
-    color: $titulos-textos-color;  
-    font-size: 12px;
-    text-align: left;
-    margin-left: 5px;
-}
-
 /*Formulario*/
-
 
 .titulosformularios{
     font-family: $textos-general-font;
