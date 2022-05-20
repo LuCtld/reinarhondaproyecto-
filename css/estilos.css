@@ -208,7 +208,7 @@
 
 /*Fotos*/
 .trabajos-card-uno, .trabajos-card-tres, .trabajos-card-dos {
-  padding: 50px 10px 0px 10px;
+  padding: 7% 2% 2% 2%;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -280,17 +280,16 @@
   padding-bottom: 5px;
 }
 
-/*
-.boton{
-    width: 100px;
-    height: 50px;
-    background-color: #BF8A8B;
-    font-family:$titulos-principales-font;
-    font-size: 18px;
-    color: $conteiner-color;
-    border: none;
+.boton {
+  width: 100px;
+  height: 50px;
+  background-color: #BF8A8B;
+  font-family: "Hoodson";
+  font-size: 18px;
+  color: #FAEDEB;
+  border: none;
 }
-*/
+
 .form-label {
   font-family: "Malgun";
   color: #6B5344;
