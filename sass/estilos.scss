@@ -403,6 +403,8 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 }
 
 /*Contacto*/
+
+
 .conteiner-contacto{
     @extend .conteiner-invitaciones;
 }
@@ -454,15 +456,14 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
     padding-bottom: 5px;
 }
 
-.boton{
-    width: 100px;
-    height: 50px;
-    background-color: #BF8A8B;
+.btn{
+    background-color: $rosa-acento-color;
     font-family:$titulos-principales-font;
     font-size: 18px;
     color: $conteiner-color;
-    border: none;
+    margin: 1%;
 }
+
 
 
 .form-label{

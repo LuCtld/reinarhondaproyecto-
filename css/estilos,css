@@ -280,12 +280,14 @@
   padding-bottom: 5px;
 }
 
-.btn {
+.boton {
+  width: 100px;
+  height: 50px;
   background-color: #BF8A8B;
   font-family: "Hoodson";
   font-size: 18px;
   color: #FAEDEB;
-  margin: 1%;
+  border: none;
 }
 
 .form-label {
@@ -293,4 +295,4 @@
   color: #6B5344;
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos,css.map */
