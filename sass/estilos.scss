@@ -44,19 +44,46 @@
 
 /*NAV*/
 
-.navbar-toggler-icon{
-    background-image: url(../assets/images/burgericondos.png)
-}
+.navbar-toggler-icon {
+    background-image: url(../assets/images/burgericondos.png) !important;
 
-.nav-item{
-    font-family:$textos-general-font;
-    color: $titulos-textos-color;  
-}
+        .nav-item{
+        font-family:$textos-general-font;
+        color: $titulos-textos-color;  
+        }
+    
 
-.navbar-brand img{
-    display: none;
-    width: 40px;
+        .navbar-toggler {
+            border: none;
+            }
+            
+        .navbar-toggler:focus {
+            box-shadow: none; 
+        }
+
+        .navbar-brand{
+            display: flex;
+
+
+            .ignav{
+                margin-right: 0%;
+                padding: 0%;
+            }
+
+            .facenav{
+                margin-left: 0%;
+                padding: 0%;
+            }
+            
+        }
+
 }
+    
+
+
+
+
+
 
 
 /*Index*/
@@ -341,7 +368,7 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 /*Fotos*/
 
 .trabajos-card-uno{
-    padding: 50px;;
+    padding: 50px 10px 0px 10px ;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -353,6 +380,7 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 }
 .trabajos-card-uno h5{
     font-family: $textos-general-font;
+    font-weight: bolder;
     color: $titulos-textos-color;  
     font-size: 20px;
 }

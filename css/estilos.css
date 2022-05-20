@@ -36,17 +36,28 @@
 
 /*NAV*/
 .navbar-toggler-icon {
-  background-image: url(../assets/images/burgericondos.png);
+  background-image: url(../assets/images/burgericondos.png) !important;
 }
-
-.nav-item {
+.navbar-toggler-icon .nav-item {
   font-family: "Malgun";
   color: #6B5344;
 }
-
-.navbar-brand img {
-  display: none;
-  width: 40px;
+.navbar-toggler-icon .navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler-icon .navbar-brand {
+  display: flex;
+}
+.navbar-toggler-icon .navbar-brand .ignav {
+  margin-right: 0%;
+  padding: 0%;
+}
+.navbar-toggler-icon .navbar-brand .facenav {
+  margin-left: 0%;
+  padding: 0%;
 }
 
 /*Index*/
@@ -197,7 +208,7 @@
 
 /*Fotos*/
 .trabajos-card-uno, .trabajos-card-tres, .trabajos-card-dos {
-  padding: 50px;
+  padding: 50px 10px 0px 10px;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -210,6 +221,7 @@
 
 .trabajos-card-uno h5, .trabajos-card-tres h5, .trabajos-card-dos h5 {
   font-family: "Malgun";
+  font-weight: bolder;
   color: #6B5344;
   font-size: 20px;
 }

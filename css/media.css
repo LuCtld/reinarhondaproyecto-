@@ -24,6 +24,16 @@
         width: 40px;
     }
 
+    .navbar-brand img{
+        display: flex;
+        width: 40px
+    }
+
+    .nav-link img{
+        display: none;
+    }
+
+
 
     
     .footer{
@@ -106,6 +116,16 @@
             width: 40px;
         }
 
+        .navbar-brand img{
+            display: flex;
+            width: 40px
+        }
+
+        .nav-link img{
+            display: none;
+        }
+
+
     .footer{
         display: flex;
         flex-direction: row;
@@ -182,6 +202,16 @@
         width: 40px;
         display: flex;
     }
+
+    .navbar-brand img{
+        display: flex;
+        width: 40px
+    }
+
+    .nav-link img{
+        display: none;
+    }
+
     
 
     .footer{
@@ -260,9 +290,14 @@
             background-color: #FAE3E1;
         }
 
+
         .navbar-brand img{
-            display: flex;
-            width: 40px
+            width: 40px;
+
+        }
+
+        .nav-link img{
+            display: none;
         }
 
     .footer{
@@ -321,6 +356,18 @@
         
     .mb-3{
         width: 90%;
+    }
+
+}
+
+@media (min-width: 993px){
+
+    .ignav{
+        display: none;
+    }
+
+    .facenav{
+        display: none;
     }
 
 }
