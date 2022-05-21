@@ -226,13 +226,13 @@
 }
 
 .astro {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   padding-top: 0%;
-  padding-left: 70%;
+  padding-left: 80%;
 }
 .astro img {
-  width: 100%;
+  width: 90%;
 }
 
 /*Fotos*/
