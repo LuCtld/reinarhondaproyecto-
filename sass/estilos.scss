@@ -45,49 +45,38 @@
 /*NAV*/
 
 .navbar-toggler-icon {
+
     background-image: url(../assets/images/burgericondos.png) !important;
-
-        .nav-item{
-        font-family:$textos-general-font;
-        color: $titulos-textos-color;  
-        }
     
-
-        .navbar-toggler {
-            border: none;
-            }
-            
-        .navbar-toggler:focus {
-            box-shadow: none; 
-        }
-
-        .navbar-brand{
-            display: flex;
-
-
-            .ignav{
-                margin-right: 0%;
-                padding: 0%;
-            }
-
-            .facenav{
-                margin-left: 0%;
-                padding: 0%;
-            }
-            
-        }
-
-}
+    }
     
+    .navbar-toggler {
+    
+    border: none;
+    
+    }
+    
+    .navbar-toggler:focus {
+    
+    box-shadow: none;
+    
+    }
+
+.navbar-brand{
+    display: inline-flex;
+    justify-content: left;
+
+    img{
+        margin: 5%;
+    }
+}    
 
 
 
-
-
+    
 
 
 /*Index*/
-
 
 .texto{
     grid-area: "texto";
@@ -135,7 +124,6 @@
     }
 }
 
-
 /*footer*/
 .footer {
     color: $titulos-textos-color;
@@ -145,8 +133,6 @@
     padding: 1.5% 1% 1% 1%;
     text-align: center;
 }
-
-
 
 /*Invitaciones*/
 
@@ -164,7 +150,6 @@
 
 .container-color{
     background-color:$conteiner-color;
-
 }
 
 // maps
@@ -227,8 +212,6 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
     color: $tipos-cards-color;
 }
 
-
-
 //Anidacion - Extend - Variables
 .invitacion-card-uno{
     padding: 20px 20px 20px 20px;
@@ -242,8 +225,6 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
         &:hover{
             z-index: 100;
             transform: scale(1.2);
-
-
         }
     }
 
@@ -462,11 +443,17 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
     font-size: 18px;
     color: $conteiner-color;
     margin: 1%;
+
+    :focus {
+    
+        box-shadow: none;
+    }
+
 }
 
 
 
-.form-label{
+.form-group{
     font-family: $textos-general-font;
     color: $titulos-textos-color;  
 }

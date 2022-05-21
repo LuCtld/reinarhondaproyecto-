@@ -35,8 +35,8 @@
                 <nav class="navbar navbar-expand-lg navbar-light " >
                     <div class="container-fluid " >  
                         <a class="navbar-brand" >
-                            <a class="ignav" href="https://www.instagram.com/reinarhonda" target="_blank" ><img src="../assets/images/instagram.png" alt="instagram" width="40"></a>
-                            <a  class="facenav" href="https://www.facebook.com/reinarhonda" target="_blanck"><img src="../assets/images/facebook.png" alt="facebook" width="40">
+                            <img class="ignav" href="https://www.instagram.com/reinarhonda" target="_blank" src="../assets/images/instagram.png" alt="instagram" width="40">
+                            <img  class="facenav" href="https://www.facebook.com/reinarhonda" target="_blanck" src="../assets/images/facebook.png" alt="facebook" width="40">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
@@ -105,22 +105,59 @@
 
                 <div class="item col-xl-6 col-md-10 col-sm-10 mx-4 my-5">
         <!-- Formulario -->
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label ">Mail</label>
-                            <input type="email" class="form-control " id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-sm">
+                        <form class="form-horizontal" method="post">
+                            <fieldset>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="email" name="email" type="text" placeholder="Mail" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Hola!" rows="7"></textarea>
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <div class="col-md-12 text-left">
+                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                        <button type="submit" class="btn btn-primary btn-lg">Borrar</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="555-555555">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hola!"></textarea>
-                    </div>
-                    <div class="mb-3" >     
-                        <button class="btn" type="submit">Enviar</button>
-                        <button class="btn" type="reset">Borrar</button>
-                    </div>
+                </div>
+            </div>
+        </div>
 
                 </div>
             

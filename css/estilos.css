@@ -38,26 +38,21 @@
 .navbar-toggler-icon {
   background-image: url(../assets/images/burgericondos.png) !important;
 }
-.navbar-toggler-icon .nav-item {
-  font-family: "Malgun";
-  color: #6B5344;
-}
-.navbar-toggler-icon .navbar-toggler {
+
+.navbar-toggler {
   border: none;
 }
-.navbar-toggler-icon .navbar-toggler:focus {
+
+.navbar-toggler:focus {
   box-shadow: none;
 }
-.navbar-toggler-icon .navbar-brand {
-  display: flex;
+
+.navbar-brand {
+  display: inline-flex;
+  justify-content: left;
 }
-.navbar-toggler-icon .navbar-brand .ignav {
-  margin-right: 0%;
-  padding: 0%;
-}
-.navbar-toggler-icon .navbar-brand .facenav {
-  margin-left: 0%;
-  padding: 0%;
+.navbar-brand img {
+  margin: 5%;
 }
 
 /*Index*/
@@ -287,8 +282,11 @@
   color: #FAEDEB;
   margin: 1%;
 }
+.btn :focus {
+  box-shadow: none;
+}
 
-.form-label {
+.form-group {
   font-family: "Malgun";
   color: #6B5344;
 }
