@@ -145,7 +145,7 @@
 
         
     .cupcake{
-        position: absolute;
+        position: fixed;
         z-index: 100;
         padding-top: 23%;
         padding-left: 15%;
@@ -153,11 +153,11 @@
     }
 
     .cupcake img{
-        width: 60%;
+        width: 50%;
     }
 
     .anillo{
-        position: absolute;
+        position: fixed;
         z-index: 100;
         padding-top: 23%;
         padding-left: 5%;
@@ -170,7 +170,7 @@
     
 
     .astro{
-        position: absolute;
+        position: fixed;
         z-index: 100;
         padding-top: 15%;
         padding-left: 80%;
@@ -291,7 +291,7 @@
 
 
     .cupcake{
-        position: absolute;
+        position: fixed;
         z-index: 100;
         padding-top: 23%;
         padding-left: 15%;
@@ -299,11 +299,11 @@
     }
 
     .cupcake img{
-        width: 60%;
+        width: 50%;
     }
 
     .anillo{
-        position: absolute;
+        position: fixed;
         z-index: 100;
         padding-top: 23%;
         padding-left: 15%;
@@ -316,7 +316,7 @@
     
 
     .astro{
-        position: absolute;
+        position: fixed;
         z-index: 100;
         margin-top: 25%;
         padding-left: 80%;
@@ -417,7 +417,7 @@
 
         
     .cupcake{
-        position: absolute;
+        position: fixed;
         z-index: 100;
         padding-top: 23%;
         padding-left: 5%;
@@ -425,11 +425,11 @@
     }
 
     .cupcake img{
-        width: 60%;
+        width: 50%;
     }
 
     .anillo{
-        position: absolute;
+        position: fixed;
         z-index: 100;
         padding-top: 23%;
         padding-left: 5%;
@@ -442,7 +442,7 @@
     
 
     .astro{
-        position: absolute;
+        position: fixed;
         z-index: 100;
         margin-top: 5%;
         padding-left: 80%;
