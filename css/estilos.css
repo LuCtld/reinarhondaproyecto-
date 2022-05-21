@@ -155,6 +155,16 @@
   width: 80%;
 }
 
+.anillo {
+  position: fixed;
+  z-index: 100;
+  padding-top: 23%;
+  padding-left: 2%;
+}
+.anillo img {
+  width: 100%;
+}
+
 /*CARDS INVITACIONES*/
 .color-card {
   background-color: #FAEDEB;
@@ -187,6 +197,16 @@
 }
 
 /*INFANTILES*/
+.cupcake {
+  position: fixed;
+  z-index: 100;
+  padding-top: 23%;
+  padding-left: 5%;
+}
+.cupcake img {
+  width: 70%;
+}
+
 /*Articulos Seccion Infantiles*/
 /*TRABAJOS*/
 .titulo-aclaracion-trabajos {
@@ -201,9 +221,19 @@
   padding: 40px 10px 10px 10px;
 }
 
+.astro {
+  position: absolute;
+  z-index: 100;
+  padding-top: 0%;
+  padding-left: 70%;
+}
+.astro img {
+  width: 100%;
+}
+
 /*Fotos*/
 .trabajos-card-uno, .trabajos-card-tres, .trabajos-card-dos {
-  padding: 7% 2% 2% 2%;
+  padding: 5% 2% 2% 2%;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -281,9 +311,6 @@
   font-size: 18px;
   color: #FAEDEB;
   margin: 1%;
-}
-.btn :focus {
-  box-shadow: none;
 }
 
 .form-group {

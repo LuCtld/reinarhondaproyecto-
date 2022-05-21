@@ -32,8 +32,18 @@
     .nav-link img{
         display: none;
     }
+    
+    .cupcake{
+        display: none;
+    }
 
+    .anillo{
+        display:none;
+    }
 
+    .astro{
+        display: none;
+    }
 
     
     .footer{
@@ -104,6 +114,18 @@
         flex-direction: row;
         justify-content: center;
         padding-bottom: 5%;
+    }
+
+    .cupcake{
+        display: none;
+    }
+
+    .anillo{
+        display:none;
+    }
+
+    .astro{
+        display: none;
     }
 
         /*Nav bar*/

@@ -33,7 +33,6 @@
 
 /*header*/
 
-
 .logo{
     padding: 0px 0px 0px 0px;
 }
@@ -70,11 +69,6 @@
         margin: 5%;
     }
 }    
-
-
-
-    
-
 
 /*Index*/
 
@@ -152,6 +146,8 @@
     background-color:$conteiner-color;
 }
 
+
+
 // maps
 
 $tamaños-tipos: (
@@ -188,7 +184,20 @@ $tamaños-tipos: (
     img{
         width: 80%;
     }
+
 }
+
+.anillo{
+    position: fixed;
+    z-index: 100;
+    padding-top:  23%;
+    padding-left: 2%;
+    
+    img{
+        width: 100%;
+    }
+}
+
 
 /*CARDS INVITACIONES*/
 .color-card{
@@ -264,6 +273,18 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 
 
 /*INFANTILES*/
+
+.cupcake{
+    position: fixed;
+    z-index: 100;
+    padding-top: 23%;
+    padding-left: 5%;
+
+    img{
+        width: 70%;
+    }
+}
+
 .conteiner-infantiles{
     @extend .conteiner-invitaciones;
 }
@@ -347,10 +368,21 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
     padding: 40px 10px 10px 10px;
 }
 
+.astro{
+    position: absolute;
+    z-index: 100;
+    padding-top: 0%;
+    padding-left: 70%;
+
+    img{
+        width: 100%;
+    }
+}
+
 /*Fotos*/
 
 .trabajos-card-uno{
-    padding: 7% 2% 2% 2% ;
+    padding: 5% 2% 2% 2% ;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -418,6 +450,7 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
 
 }
 
+
 /*Formulario*/
 
 .titulosformularios{
@@ -443,11 +476,6 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
     font-size: 18px;
     color: $conteiner-color;
     margin: 1%;
-
-    :focus {
-    
-        box-shadow: none;
-    }
 
 }
 
