@@ -70,6 +70,10 @@
     }
 }    
 
+.ignav{
+    margin-right: 10%;
+}
+
 /*Index*/
 
 .texto{
@@ -476,14 +480,16 @@ $textos-cards-tamaño, $textos-cards-alineacion) {
     font-size: 18px;
     color: $conteiner-color;
     margin: 1%;
-
 }
-
 
 
 .form-group{
     font-family: $textos-general-font;
     color: $titulos-textos-color;  
+}
+
+.form-horizontal{
+    width: 90%;
 }
 
 

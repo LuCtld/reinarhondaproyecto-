@@ -55,6 +55,10 @@
   margin: 5%;
 }
 
+.ignav {
+  margin-right: 10%;
+}
+
 /*Index*/
 .texto {
   grid-area: "texto";
@@ -316,6 +320,10 @@
 .form-group {
   font-family: "Malgun";
   color: #6B5344;
+}
+
+.form-horizontal {
+  width: 90%;
 }
 
 /*# sourceMappingURL=estilos.css.map */
