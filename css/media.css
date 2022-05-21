@@ -233,7 +233,19 @@
     .nav-link img{
         display: none;
     }
+ 
+    
+    .cupcake{
+        display: none;
+    }
 
+    .anillo{
+        display:none;
+    }
+
+    .astro{
+        display: none;
+    }
     
 
     .footer{
